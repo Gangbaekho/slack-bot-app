@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
 import { ChakraProvider } from "@chakra-ui/react"
+import HomePage from './page/HomePage'
 
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-    <h1>Hello world</h1>
+      <HomePage/>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
