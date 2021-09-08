@@ -8,7 +8,8 @@ import {
   Avatar,
   useColorModeValue,
   Select,
-  Input 
+  Input,
+  Divider 
 } from '@chakra-ui/react';
 
 const Wapper = (props) => {
@@ -28,13 +29,29 @@ const Wapper = (props) => {
             textTransform={'uppercase'}
             fontWeight={800}
             fontSize={'sm'}
-            letterSpacing={1.1}>
+            letterSpacing={1.1}
+            py={3}>
             SELECT WORK SPACE
           </Text>
-          <Select placeholder="Select option">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+          <Select placeholder="Workspace select">
+            <option value="workspace1">Workspace one</option>
+            <option value="workspace2">Workspace two</option>
+            <option value="workspace3">Workspace three</option>
+          </Select>
+          <Text
+            color={'green.500'}
+            textTransform={'uppercase'}
+            fontWeight={800}
+            fontSize={'sm'}
+            letterSpacing={1.1}
+            py={3}>
+            SELECT USER
+          </Text>
+          <Select>
+            <option value="all" selected>All of them</option>
+            <option value="user1">User one</option>
+            <option value="user2">User two</option>
+            <option value="user3">User three</option>
           </Select>
           <Heading
             color={useColorModeValue('gray.700', 'white')}
